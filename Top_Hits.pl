@@ -7,6 +7,9 @@
 #Purpose: To take a blast output and parse the information for a best hit(s) determined by evalue and percent identity, print the output. For this, once the blast output is parsed, only the name taken and compared to an origianl source file to extract name and sequence information from a cleaned Illumina sequence file. 
 #
 #Commands: perl top_hits.pl <in_file> <out_file> <# of hits wanted> <Cleaned Sequence File>
+# The cleaned sequence file is the cleaned fasta file generated after the Prinseq-lite.pl cleaning stage.
+#
+# This is a necessary script for the Optional_Blast_Wrapper.pl however, if you wish to perform this stage on your own, simply use your favorite Blast Output Parser and match the lines to the Cleaned the Sequence Fasta File. If you wish to use the Optional_Velvet_Wrapper.pl, please make sure the file names are corresponding. 
 #
 ####################
 
