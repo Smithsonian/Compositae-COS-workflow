@@ -6,4 +6,4 @@ LICENSE
 
 The MIT License should included with the project. If not, it can be found at: http://opensource.org/licenses/mit-license.php
 
-Copyright (C) 2013 Jennifer R. Mandel and Rishi R. Masalia
+Copyright (C) 2013 Jennifer R. Mandel & Rishi R. Masalia
