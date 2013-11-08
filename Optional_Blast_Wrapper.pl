@@ -9,8 +9,8 @@
 #Parameters:
 #	-name <file>		This is to specific the names file. Critical file.
 #	-evalue <#>		To specific the blast evalue. Default = 0.00001
-#	-database <file>	Specify which database to run. Default, Phyluce Probes or Custom
-#	-c <T/F>		If your files are compressed. Default = F 
+#	-database <file>	Specify which database to run. Default, Full EST sequence that the probes were designed from. "COS_sunf_lett_saff_all.fasta"
+#	-c <T/F>		Specify if files are compressed. Default = F|False 
 #
 #For instructions on things to do prior to running the script please refer to the README for this script (Optional_Blast_Wrapper.pl)
 ###############
@@ -46,7 +46,7 @@ if($params{name}){
 		$evalue = "0.00001"; #if evalue is specified use that, if not use default.
 	}        
 	if ($database eq ""){
-                $database = "finalests.fasta"; #if database is specified use that, if not use default
+                $database = "COS_sunf_lett_saff_all.fasta"; #if database is specified use that, if not use default
         } 
         
 
