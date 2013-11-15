@@ -36,7 +36,7 @@ if($params{name}){
        if ($zipped eq "" | $zipped eq "F" | $zipped eq "f"){
                 system ("perl ./programs/prinseq-lite.pl -fastq $name.fq -out_format 1 -out_good ./$name.trimmed -out_bad null -log $name.dirty.log -min_len 40 -noniupac -min_qual_mean 15 -lc_method entropy -lc_threshold 60 -trim_ns_right 10 -ns_max_p 20");
         } elsif ($zipped eq "T"| $zipped eq "t"){
-                system ("gzip -dc $name.fastq.gz | perl ./programs/prinseq-lite.pl -fastq stdin -out_format 1 -out_good ./$name.trimmed -out_bad null -log $name.dirty.log -min_len 40 -noniupac -min_qual_mean 15 -lc_method entropy -lc_threshold 60 -trim_ns_right 10 -ns_max_p 20");
+                system ("gzip -dc $name.fq.gz | perl ./programs/prinseq-lite.pl -fastq stdin -out_format 1 -out_good ./$name.trimmed -out_bad null -log $name.dirty.log -min_len 40 -noniupac -min_qual_mean 15 -lc_method entropy -lc_threshold 60 -trim_ns_right 10 -ns_max_p 20");
         } else {
                 print "Error in -c parameter\n";
         }
