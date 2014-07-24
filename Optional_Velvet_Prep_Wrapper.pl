@@ -29,7 +29,7 @@ while (<NAME>){
 
         system ("perl ./programs/pairfq.pl -f ./Output/$forward.blasted_reads.fasta -r ./Output/$reverse.blasted_reads.fasta -fp $forward.paired.fasta -rp $reverse.paired.fasta -fs $forward.singletons.fasta -rs $reverse.singletons.fasta");
 
-        system ("./programs/shuffleSequences_fasta.pl $forward.paired.fasta $reverse.paired.fasta $together.together_paired.fasta");
+        system ("perl ./programs/shuffleSequences_fasta.pl $forward.paired.fasta $reverse.paired.fasta $together.together_paired.fasta");
 
 
 ### Concatenate Singleton files together ###
