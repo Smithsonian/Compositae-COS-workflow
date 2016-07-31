@@ -121,8 +121,7 @@ In the course of this workshop, we detail the software and commands you will nee
 + **Arguments:** <names_file>
 + The names file should look like this: ```TaxonNameR1=TaxonNameR2=TaxonName```
 + Example on the GitHub site: ```Optional_Velvet_Wrapper_Names_File_Example```
-	+ Pairfq.pl
-	+ Shufflesequences.pl
++ The wrapper also runs the two perl scripts ```Pairfq.pl``` and ```Shufflesequences.pl``` which pair and shuffle sequences, important for Velvet. These steps would not be necessary for other assembly programs.
 	
 ####Running VelvetOptimiser
 + [Velvet](https://github.com/dzerbino/velvet/tree/master)/[Velvet Optimiser](https://github.com/tseemann/VelvetOptimiser)
@@ -147,9 +146,8 @@ In the course of this workshop, we detail the software and commands you will nee
 * [PHYLUCE](http://phyluce.readthedocs.org/en/latest/tutorial-one.html) was developed by Brant Faircloth for the analysis of UCE data, but we used parts of this pipeline: LASTZ matching of assemblies to the probe set and selecting only those loci with single matches. The entire PHYLUCE pipeline, however, encompasses everything from trimming to assembly to alignment and matrix generation. 
 	+ When we first used PHYLUCE for Mandel *et al.*, 2014, it used Velvet for assembly. Now the new version of PHYLUCE supports Trinity for UCE locus assembly. If you want to use PHYLUCE out of the box on target enrichment data with no modification, you probably should use Trinity because it requires the Trinity headers to be there in the assembly FASTA files. It is not hard to modify, however, so don't let what's hard coded in the software deter you from changing things up.
 	+ To do the LASTZ portion of PHYLUCE, you will need to have your probes in a file such as this example on GitHub: ```COS_probes_phyluce.fasta``` 
-	+ It's just a FASTA file with the probes listed with the headers labeled for each locus such as:
-
-		```>uce-1_p1```  
+	+ It's just a FASTA file with the probes listed with the headers labeled for each locus such as:  
+```>uce-1_p1```  
 		```GCGAAGGGGACGACAAAATCATA```  
 
 + Then you will run the PHYLUCE ```phyluce_assembly_match_contigs_to_probes.py``` program specifying the directory to your assemblies ```--contigs```, the probe file mentioned above ```--probes```, and an output directory ```--output```. This program in part runs [LASTZ](http://www.bx.psu.edu/~rsharris/lastz/) to locally align contigs to probe sequence. 
