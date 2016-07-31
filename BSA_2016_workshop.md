@@ -2,10 +2,9 @@
 ##Botany 2016 Workshop
 
 ###Authors: 
-**Jennifer R. Mandel** (jmandel@memphis.edu)  
-**Rebecca B. Dikow** (DikowR@si.edu)  
-**Vicki A. Funk** (FunkV@si.edu)  
-Please contact us with bug reports or other suggested improvements.
+**Jennifer R. Mandel:** jmandel@memphis.edu, @JenniferMandel    
+**Rebecca B. Dikow:** DikowR@si.edu, @rdikow  
+**Vicki A. Funk:** FunkV@si.edu  
 
 ###Objectives:  
 In the course of this workshop, we detail the software and commands you will need to generate and analyze target enrichment data for phylogeny. At each point in the workflow, there are multiple options for software and/or commands, so while we try to present these options, we can't guarantee that we have been exhaustive. The tools are quickly evolving. Other resources attached to this workshop include powerpoints about wet-lab procedures and expedition protocols.
