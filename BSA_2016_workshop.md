@@ -149,7 +149,6 @@ In the course of this workshop, we detail the software and commands you will nee
 	+ It's just a FASTA file with the probes listed with the headers labeled for each locus such as:  
 ```>uce-1_p1```  
 		```GCGAAGGGGACGACAAAATCATA```  
-
 + Then you will run the PHYLUCE ```phyluce_assembly_match_contigs_to_probes.py``` program specifying the directory to your assemblies ```--contigs```, the probe file mentioned above ```--probes```, and an output directory ```--output```. This program in part runs [LASTZ](http://www.bx.psu.edu/~rsharris/lastz/) to locally align contigs to probe sequence. 
 
 * We've done things two ways from here, first, as in Mandel *et al.*, 2014, we considered only those contigs with single matches to the probe set. If a two contigs matched a single probe, then we did not include either contig. What this lead to was a large amount of missing data, because as everyone in this room knows, there are very few truly single copy loci in plants, especially when you are considering a fairly deep divergence.
